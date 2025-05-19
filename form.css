@@ -1,0 +1,44 @@
+.name-input{
+    border: 1px solid red;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+   text-transform: lowercase;
+   color: red;
+   width: 100%;
+   max-width: 500px;
+}
+
+.name-input::placeholder{
+    color: red;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+@keyframes rotate360 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#btn {
+    border: none;
+    outline: none;
+    background-color: red;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: rotate360 1s linear infinite;
+}
+
+/* #btn:hover{
+    transform: translateY(-5px) scale(1.1) rotateZ(360deg);
+} */
